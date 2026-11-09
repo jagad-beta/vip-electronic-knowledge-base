@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="VIP Electronic Knowladge Base — basis pengetahuan dan dokumentasi digital dengan tampilan profesional untuk Lark.">
+  <meta name="theme-color" content="#f6f8fc">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+  <title>VIP Electronic Knowladge Base</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" class="svg-sprite" aria-hidden="true">
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M9 21v-8h6v8"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19V5a2 2 0 0 1 2-2h13a1 1 0 0 1 1 1v17H6a2 2 0 0 1 0-4h14"/><path d="M8 7h8M8 11h6"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3.1 6.5 7.1 1-5.1 5 1.2 7.1L12 18.2l-6.3 3.4 1.2-7.1-5.1-5 7.1-1z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24"><path d="M10 3h4l.6 2.2 2 1.1 2.2-.7 2 3.5-1.6 1.7v2.4l1.6 1.7-2 3.5-2.2-.7-2 1.1L14 21h-4l-.6-2.2-2-1.1-2.2.7-2-3.5 1.6-1.7v-2.4L3.2 9.1l2-3.5 2.2.7 2-1.1z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 4.7 1.2c-.7 1-2.2 1.5-2.2 3.2M12 17.2h.01"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M6 2h8l5 5v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"/><path d="M14 2v6h5M8 13h8M8 17h6"/></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 6a2 2 0 0 1 2-2h5l2 3h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M2 20v-2a6 6 0 0 1 12 0v2M17 5a3 3 0 0 1 0 6M18 14a5 5 0 0 1 4 5v1"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M4 17v4h16v-4"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 17V5m-4 4 4-4 4 4M4 17v4h16v-4"/></symbol>
+    <symbol id="i-edit" viewBox="0 0 24 24"><path d="m4 20 5-.8L20 8l-4-4L5 15zM13 7l4 4"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M7 7l1 14h8l1-14M10 11v6m4-6v6"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M5 5 19 19M19 5 5 19"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 11A8 8 0 1 0 18 17M20 4v7h-7"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 2 9 4v6c0 5-3 8-9 10-6-2-9-5-9-10V6z"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="m12 3 10 18H2zM12 9v5m0 4h.01"/></symbol>
+  </svg>
+  <div class="app-layout">
+    <aside id="sidebar" class="sidebar" aria-label="Navigasi utama">
+      <a class="brand" href="#beranda" id="brand-link" aria-label="VIP Electronic Knowladge Base, Beranda">
+        <div class="brand-logo">VIP<span class="brand-dot">.</span></div>
+        <div class="brand-sub">ELECTRONIC KNOWLADGE BASE</div>
+      </a>
+      <div class="sidebar-scroll">
+        <div class="nav-section-title">MENU UTAMA</div>
+        <nav class="nav-list" id="primary-nav">
+          <button class="nav-item active" type="button" data-page="beranda"><span class="nav-icon red"><svg><use href="#i-home"/></svg></span><span><strong>Beranda</strong><small>Ringkasan & aktivitas terbaru</small></span></button>
+          <button class="nav-item" type="button" data-page="pengetahuan"><span class="nav-icon blue"><svg><use href="#i-book"/></svg></span><span><strong>Pusat Pengetahuan</strong><small>Semua artikel & panduan</small></span></button>
+          <button class="nav-item" type="button" data-page="kategori"><span class="nav-icon green"><svg><use href="#i-grid"/></svg></span><span><strong>Kategori</strong><small>Jelajahi berdasarkan topik</small></span></button>
+          <button class="nav-item" type="button" data-page="favorit"><span class="nav-icon purple"><svg><use href="#i-star"/></svg></span><span><strong>Artikel Favorit</strong><small>Pengetahuan tersimpan</small></span></button>
+          <button class="nav-item" type="button" data-page="riwayat"><span class="nav-icon cyan"><svg><use href="#i-clock"/></svg></span><span><strong>Riwayat Aktivitas</strong><small>Perubahan dalam perangkat</small></span></button>
+          <button class="nav-item" type="button" data-page="pengaturan"><span class="nav-icon amber"><svg><use href="#i-settings"/></svg></span><span><strong>Pengaturan Data</strong><small>Impor, ekspor & pemulihan</small></span></button>
+        </nav>
+        <div class="nav-separator"></div>
+        <div class="nav-section-title">INFORMASI</div>
+        <nav class="nav-list" id="secondary-nav">
+          <button class="nav-item" type="button" data-page="bantuan"><span class="nav-icon blue"><svg><use href="#i-help"/></svg></span><span><strong>Bantuan</strong><small>Panduan penggunaan</small></span></button>
+          <button class="nav-item" type="button" data-page="tentang"><span class="nav-icon slate"><svg><use href="#i-info"/></svg></span><span><strong>Tentang</strong><small>Informasi aplikasi</small></span></button>
+        </nav>
+      </div>
+      <div class="sidebar-bottom"><span class="online-dot"></span> Siap digunakan di browser & Lark</div>
+    </aside>
+
+    <div class="main-column">
+      <header class="topbar">
+        <div class="topbar-title"><button id="menu-btn" class="icon-only mobile-only" type="button" aria-label="Buka navigasi"><svg><use href="#i-menu"/></svg></button><span class="topbar-brand"><span>VIP</span> Electronic Knowladge Base</span><span class="topbar-page" id="header-page">/ Beranda</span></div>
+        <div class="topbar-end"><span class="offline-badge"><span class="online-dot"></span> Mode lokal</span><button type="button" class="topbar-user" id="top-about" title="Tentang aplikasi">VIP Knowledge Center</button></div>
+      </header>
+      <div class="workspace">
+        <main id="pages">
+          <section class="page is-current" id="page-beranda" aria-labelledby="welcome-title">
+            <div class="hero"><span class="hero-kicker">SELAMAT DATANG DI</span><h1 id="welcome-title"><span>VIP</span> Electronic Knowladge Base</h1><p>Temukan panduan, prosedur, dan informasi penting dalam satu pusat pengetahuan digital yang praktis dan mudah digunakan.</p><div class="hero-actions"><button class="btn btn-red" type="button" data-action="create"><svg><use href="#i-plus"/></svg> Tambah Pengetahuan</button><button class="btn btn-white" type="button" data-page="pengetahuan"><svg><use href="#i-search"/></svg> Jelajahi Artikel</button></div></div>
+            <div class="stats-row">
+              <div class="stat-card"><span class="stat-icon purple"><svg><use href="#i-file"/></svg></span><div><span class="stat-label">Total Pengetahuan</span><strong id="stat-total">0</strong><small>Artikel tersedia</small></div></div>
+              <div class="stat-card"><span class="stat-icon mint"><svg><use href="#i-folder"/></svg></span><div><span class="stat-label">Total Kategori</span><strong id="stat-category">0</strong><small>Kelompok pengetahuan</small></div></div>
+              <div class="stat-card"><span class="stat-icon gold"><svg><use href="#i-star"/></svg></span><div><span class="stat-label">Artikel Favorit</span><strong id="stat-favorite">0</strong><small>Disimpan di browser</small></div></div>
+            </div>
+            <div class="dashboard-columns">
+              <div class="panel panel-content">
+                <div class="panel-heading"><div class="panel-title"><span class="heading-icon red"><svg><use href="#i-book"/></svg></span><div><h2>Pencarian & Pengetahuan</h2><p>Cari informasi, pilih kategori, lalu baca artikel yang dibutuhkan.</p></div></div><button type="button" class="outline-btn" data-action="create"><svg><use href="#i-plus"/></svg> Tambah</button></div>
+                <div class="search-form"><label class="search-field"><svg><use href="#i-search"/></svg><span class="sr-only">Cari pengetahuan</span><input type="search" id="home-search" placeholder="Cari judul, isi, atau kata kunci..." autocomplete="off"></label><select aria-label="Filter kategori" id="home-category"><option value="">Semua kategori</option></select></div>
+                <div class="list-toolbar"><strong>Artikel terbaru</strong><button type="button" class="text-btn" data-page="pengetahuan">Lihat semua <svg><use href="#i-arrow"/></svg></button></div>
+                <div id="home-articles" class="compact-list"></div>
+                <div id="home-empty" class="empty-state" hidden>Tidak ada artikel yang sesuai. Coba kata kunci lain.</div>
+                <div class="list-footer"><button type="button" class="outline-btn full" data-page="pengetahuan">Buka Pusat Pengetahuan <svg><use href="#i-arrow"/></svg></button></div>
+              </div>
+              <div class="panel panel-activity">
+                <div class="panel-heading"><div class="panel-title"><span class="heading-icon red"><svg><use href="#i-file"/></svg></span><div><h2>Log Aktivitas</h2><p>Aktivitas di browser ini</p></div></div><button class="outline-btn tiny" type="button" id="clear-activity" title="Hapus catatan aktivitas lokal"><svg><use href="#i-trash"/></svg> Hapus</button></div>
+                <div id="home-activity" class="activity-list"></div>
+                <button class="text-btn activity-more" type="button" data-page="riwayat">Lihat riwayat lengkap <svg><use href="#i-arrow"/></svg></button>
+              </div>
+            </div>
+          </section>
+
+          <section class="page" id="page-pengetahuan" hidden aria-labelledby="knowledge-title">
+            <div class="page-intro"><div><span class="section-kicker">PUSAT INFORMASI</span><h1 id="knowledge-title">Pusat Pengetahuan</h1><p>Temukan SOP, panduan, dokumentasi, dan informasi operasional.</p></div><button class="btn btn-red" type="button" data-action="create"><svg><use href="#i-plus"/></svg> Tambah Artikel</button></div>
+            <div class="panel"><div class="knowledge-controls"><label class="search-field"><svg><use href="#i-search"/></svg><span class="sr-only">Cari artikel</span><input type="search" id="library-search" placeholder="Cari artikel, isi, atau kata kunci..." autocomplete="off"></label><select id="library-category" aria-label="Kategori pengetahuan"><option value="">Semua kategori</option></select><select id="library-sort" aria-label="Urutkan artikel"><option value="new">Terbaru</option><option value="title">Judul A–Z</option><option value="old">Terlama</option></select></div><div class="collection-meta"><span id="library-count">0 artikel tersedia</span><button type="button" class="text-btn" id="clear-library-filter">Bersihkan filter</button></div><div id="library-grid" class="article-grid"></div><div class="empty-state" id="library-empty" hidden><strong>Tidak ada artikel</strong><p>Silakan ubah kata kunci, kategori, atau tambahkan artikel baru.</p></div></div>
+          </section>
+
+          <section class="page" id="page-kategori" hidden aria-labelledby="category-title"><div class="page-intro"><div><span class="section-kicker">KELOMPOK INFORMASI</span><h1 id="category-title">Kategori Pengetahuan</h1><p>Pilih kategori untuk melihat semua artikel terkait.</p></div></div><div id="category-grid" class="category-grid"></div></section>
+          <section class="page" id="page-favorit" hidden aria-labelledby="favorites-title"><div class="page-intro"><div><span class="section-kicker">KOLEKSI ANDA</span><h1 id="favorites-title">Artikel Favorit</h1><p>Artikel yang Anda tandai tersimpan secara lokal pada browser ini.</p></div></div><div class="panel"><div id="favorite-grid" class="article-grid"></div><div id="favorite-empty" class="empty-state" hidden><strong>Belum ada artikel favorit</strong><p>Klik ikon bintang pada artikel untuk menambahkannya ke daftar ini.</p><button class="btn btn-red" type="button" data-page="pengetahuan">Jelajahi Artikel</button></div></div></section>
+          <section class="page" id="page-riwayat" hidden aria-labelledby="history-title"><div class="page-intro"><div><span class="section-kicker">RIWAYAT LOKAL</span><h1 id="history-title">Riwayat Aktivitas</h1><p>Catatan tindakan Anda pada perangkat/browser ini, bukan log seluruh anggota Lark.</p></div><button class="outline-btn" type="button" id="clear-all-activity"><svg><use href="#i-trash"/></svg> Hapus Riwayat</button></div><div class="panel"><div id="activity-all" class="activity-list wide-activity"></div></div></section>
+          <section class="page" id="page-pengaturan" hidden aria-labelledby="settings-title"><div class="page-intro"><div><span class="section-kicker">PENGELOLAAN KONTEN</span><h1 id="settings-title">Pengaturan Data</h1><p>Kelola cadangan JSON dan konten yang disimpan secara lokal.</p></div></div>
+            <div class="settings-grid">
+              <div class="panel settings-card"><span class="setting-icon blue"><svg><use href="#i-download"/></svg></span><h2>Ekspor Pengetahuan</h2><p>Unduh seluruh artikel sebagai berkas JSON untuk dicadangkan atau mengganti <code>data/articles.json</code> di GitHub.</p><button class="btn btn-red" type="button" id="export-data"><svg><use href="#i-download"/></svg> Unduh JSON</button></div>
+              <div class="panel settings-card"><span class="setting-icon green"><svg><use href="#i-upload"/></svg></span><h2>Impor Pengetahuan</h2><p>Muat koleksi artikel dari JSON berformat sesuai. Tindakan ini menggantikan data artikel lokal setelah konfirmasi.</p><button class="outline-btn" type="button" id="import-data"><svg><use href="#i-upload"/></svg> Pilih Berkas JSON</button></div>
+              <div class="panel settings-card"><span class="setting-icon amber"><svg><use href="#i-refresh"/></svg></span><h2>Pulihkan Data Awal</h2><p>Hapus perubahan lokal lalu kembali ke artikel bawaan yang diterbitkan di GitHub. Ekspor cadangan terlebih dahulu.</p><button class="outline-btn" type="button" id="restore-data"><svg><use href="#i-refresh"/></svg> Pulihkan Data Bawaan</button></div>
+              <div class="panel settings-card"><span class="setting-icon purple"><svg><use href="#i-file"/></svg></span><h2>Unduh Template JSON</h2><p>Gunakan contoh format untuk menyiapkan artikel dalam jumlah banyak secara terstruktur.</p><button class="outline-btn" type="button" id="template-data"><svg><use href="#i-download"/></svg> Unduh Template</button></div>
+            </div>
+            <div class="security-note"><svg><use href="#i-shield"/></svg><div><strong>Informasi keamanan & penyimpanan</strong><p>Versi GitHub Pages tidak mempunyai autentikasi Lark maupun database bersama. Jangan memasukkan password, token, data klien rahasia, atau dokumen internal sensitif ke dalam repositori publik. Perubahan editor hanya ada pada browser ini sampai JSON dipublikasikan ulang.</p></div></div>
+          </section>
+          <section class="page" id="page-bantuan" hidden aria-labelledby="help-title"><div class="page-intro"><div><span class="section-kicker">PANDUAN PENGGUNA</span><h1 id="help-title">Bantuan & Panduan</h1><p>Petunjuk mengoperasikan VIP Electronic Knowladge Base.</p></div></div><div class="panel prose-panel"><h2>Memulai</h2><ol><li>Buka menu <strong>Pusat Pengetahuan</strong> untuk melihat semua artikel.</li><li>Ketik kata kunci di kolom pencarian; pilih kategori bila perlu.</li><li>Klik artikel untuk membaca isi, lalu pilih <strong>Favorit</strong> untuk menyimpannya.</li><li>Klik <strong>Tambah Artikel</strong> untuk membuat entri; gunakan <strong>Sunting</strong> untuk memperbarui isinya.</li><li>Buka <strong>Pengaturan Data</strong> untuk mengekspor JSON sebagai cadangan atau mengimpor koleksi.</li></ol><h2>Memublikasikan perubahan kepada tim</h2><p>Perubahan editor disimpan di browser. Untuk menerbitkan ke website yang dipakai bersama, ekspor JSON lalu perbarui file <code>data/articles.json</code> di repositori GitHub. Pengguna dengan perubahan lokal sebelumnya dapat memilih <strong>Pulihkan Data Bawaan</strong> untuk mengambil versi yang baru diterbitkan.</p><h2>Menjalankan di Lark</h2><p>Unggah berkas ke GitHub Pages, kemudian buat <strong>Custom App → Web app</strong> pada Lark Developer Console. Masukkan URL HTTPS website sebagai halaman utama desktop dan seluler. Dokumen selengkapnya ada di <code>docs/PANDUAN_LARK.md</code>.</p><h2>Batasan</h2><p>Tampilan di Lark tidak otomatis memberikan autentikasi, hak akses per pengguna, sinkronisasi multi-perangkat, atau perlindungan konten. Fitur tersebut memerlukan backend dan penyimpanan privat.</p></div></section>
+          <section class="page" id="page-tentang" hidden aria-labelledby="about-title"><div class="page-intro"><div><span class="section-kicker">PROFIL APLIKASI</span><h1 id="about-title">Tentang VIP Knowledge</h1><p>Pusat informasi dan pengetahuan digital berbasis web.</p></div></div><div class="panel prose-panel"><div class="about-brand"><div class="brand-logo">VIP<span class="brand-dot">.</span></div><div><h2>VIP Electronic Knowladge Base</h2><p>Versi 1.0 · GitHub Pages & Lark Web App</p></div></div><p>Aplikasi ini dibuat untuk merangkum dokumentasi, SOP, petunjuk kerja, FAQ, dan pengetahuan organisasi dalam tampilan yang mudah digunakan.</p><div class="about-facts"><div><strong>Frontend</strong><span>HTML, CSS, JavaScript murni</span></div><div><strong>Data</strong><span>JSON publik & penyimpanan browser</span></div><div><strong>Integrasi</strong><span>Website untuk Lark Web App</span></div><div><strong>Hak akses</strong><span>Belum memakai SSO/otorisasi Lark</span></div></div><div class="security-note"><svg><use href="#i-info"/></svg><div><strong>Keamanan dan keandalan</strong><p>Aplikasi dirancang dengan pembatasan input, rendering teks aman, dan tanpa secret di frontend. Namun, tidak ada perangkat lunak yang dapat dijamin bebas dari seluruh bug atau celah keamanan; untuk data privat harus dilakukan audit serta implementasi backend/SSO sebelum produksi.</p></div></div></div></section>
+        </main>
+        <footer class="footer"><span>© <span id="year"></span> VIP Electronic Knowladge Base</span><span>Powered by GitHub Pages · Compatible with Lark Web App</span></footer>
+      </div>
+    </div>
+  </div>
+
+  <dialog id="article-dialog" class="modal" aria-labelledby="article-title">
+    <div class="modal-header"><div><span class="section-kicker" id="article-category">ARTIKEL</span><h2 id="article-title">Judul</h2></div><button class="icon-only modal-close" type="button" data-close="article-dialog" aria-label="Tutup detail"><svg><use href="#i-x"/></svg></button></div>
+    <div class="modal-body"><p class="detail-summary" id="article-summary"></p><div class="detail-metadata"><span id="article-date"></span><span id="article-tags"></span></div><article id="article-content" class="article-prose"></article><div id="article-source" class="source-note"></div></div>
+    <div class="modal-footer"><button type="button" id="article-favorite" class="outline-btn"><svg><use href="#i-star"/></svg> Favorit</button><button type="button" id="article-copy" class="outline-btn"><svg><use href="#i-copy"/></svg> Salin Tautan</button><span class="spacer"></span><button type="button" id="article-delete" class="danger-outline"><svg><use href="#i-trash"/></svg> Hapus</button><button type="button" id="article-edit" class="btn btn-red"><svg><use href="#i-edit"/></svg> Sunting</button></div>
+  </dialog>
+
+  <dialog id="editor-dialog" class="modal editor-modal" aria-labelledby="editor-title">
+    <div class="modal-header"><div><span class="section-kicker">EDITOR PENGETAHUAN</span><h2 id="editor-title">Tambah Artikel</h2><p>Isi data berikut. Perubahan disimpan pada browser ini.</p></div><button class="icon-only modal-close" type="button" data-close="editor-dialog" aria-label="Tutup editor"><svg><use href="#i-x"/></svg></button></div>
+    <form id="article-form"><div class="editor-fields"><input type="hidden" id="edit-id"><div class="field-row"><label class="field"><span>Judul artikel <em>*</em></span><input id="edit-title" required maxlength="160" placeholder="Contoh: SOP Penanganan Tiket"></label><label class="field"><span>Kategori <em>*</em></span><input id="edit-category" required maxlength="65" list="category-options" placeholder="Pilih atau tulis kategori"><datalist id="category-options"></datalist></label></div><label class="field"><span>Ringkasan</span><textarea id="edit-summary" maxlength="450" rows="2" placeholder="Ringkas isi artikel dalam satu atau dua kalimat"></textarea></label><label class="field"><span>Kata kunci <small>(pisahkan dengan koma)</small></span><input id="edit-tags" maxlength="400" placeholder="SOP, layanan, dokumentasi"></label><label class="field"><span>Isi artikel <em>*</em></span><textarea id="edit-content" required maxlength="50000" rows="10" placeholder="## Pengantar&#10;Isi panduan...&#10;&#10;## Langkah Kerja&#10;- Langkah pertama&#10;- Langkah kedua"></textarea><small>Format teks sederhana: # Judul, ## Subjudul, - daftar, 1. daftar bernomor. Kode HTML tidak akan dieksekusi.</small></label><label class="field"><span>Sumber / Referensi (opsional)</span><input id="edit-source" maxlength="500" placeholder="Dokumen, penanggung jawab, atau referensi"></label></div><div class="modal-footer"><button type="button" class="outline-btn" data-close="editor-dialog">Batal</button><button type="submit" class="btn btn-red"><svg><use href="#i-check"/></svg> Simpan Artikel</button></div></form>
+  </dialog>
+  <dialog id="confirm-dialog" class="modal confirm-modal" aria-labelledby="confirm-title"><div class="modal-header"><div><span class="section-kicker">KONFIRMASI TINDAKAN</span><h2 id="confirm-title">Apakah Anda yakin?</h2></div><button class="icon-only modal-close" type="button" id="confirm-x" aria-label="Batal"><svg><use href="#i-x"/></svg></button></div><div class="modal-body"><p id="confirm-message"></p></div><div class="modal-footer"><button class="outline-btn" type="button" id="confirm-no">Batal</button><button class="btn btn-red" type="button" id="confirm-yes">Ya, Lanjutkan</button></div></dialog>
+  <input type="file" id="file-upload" accept=".json,application/json" hidden>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <button id="mobile-overlay" class="mobile-overlay" type="button" aria-label="Tutup navigasi" hidden></button>
+</body>
+</html>
